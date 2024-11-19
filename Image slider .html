@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="khatu shyam ji.jpg" />
+      <img src="shree Ram ji.avif" />
+      <img src="Radhe krishna.avif" />
+      <img src="shiv ji.avif" />
+      <img src="shree ganesh ji.avif" />
+    </div>
+
+    <style>
+      body {
+        background-image: url("background.avif");
+      }
+        .container {
+        height: 400px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10%;
+      }
+      .container img {
+        width: 10%;
+        height: 100%;
+        border-radius: 5%;
+        object-fit: cover;
+        transition: all 0.5s ease;
+      }
+      .container img:hover {
+        width: 25%;
+      }
+    </style>
+  </body>
+</html>
